@@ -1,0 +1,39 @@
+<html>
+<body>
+	<button id= "dog" onclick="changeTextblue()"> Click Me </button>
+	<button id= "button" onclick = "changeTextyellow()"> yellow</button>
+<p id= "displayText" onmouseover="changeText()" onmouseout="changeBack()">Not clicked </p>
+<button id="hide" onclick="hideText()">HIDE</button>
+<button id="showbutton" onclick="showText()">SHOW</button>
+
+<img id="cat" src="" width="40%">
+
+<script>
+	function changeTextblue(){
+document.getElementById("displayText").style.color = "blue";
+	}
+function changeTextyellow(){
+document.getElementById("displayText").style.color = "yellow";
+}
+function hideText(){
+document.getElementById("displayText").style.visibility ="hidden";
+}
+function showText(){
+document.getElementById("displayText").style.visibility="visible";
+}
+function changeText(){
+document.getElementById("displayText").innerHTML="SHAPE";
+
+}
+function changeBack(){
+document.getElementById("displayText").innerHTML="Not clicked";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
